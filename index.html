@@ -13,23 +13,23 @@
       <br><br>
       <h3>Blad Hotspot</h3>
       <br>
-      <input type="text" id="voucher" placeholder="Enter your voucher code">
-      <button id="login">Login</button>
+      <input type="text" id="voucherinput" placeholder="Enter your voucher code">
+      <button onclick="checkvoucher()" id="login">Login</button>
       <br><br>
       <div class="searchbar">
-      <input type="text" id="search" placeholder="Already bought? Find My Voucher">
+      <input type="text" onclick="findmyvoucher" id="search" placeholder="Already bought? Find My Voucher">
     </div>
     </div>
 
     <br><br>
-    <div class="prices">
+    <div  class="prices">
       <p>Select a package and pay with Mobile Money</p>
       <br>
       <table>
         <tr>
           <td>3HOURS</td>
         <td><b>UGX 500</b></td>
-        <td><button id="buy">BUY</button></td>
+        <td><button onclick="buy('3hrs')" class="buy">BUY</button></td>
         </td>
       </table>
       <br>
@@ -37,7 +37,7 @@
         <tr>
           <td>5HOURS</td>
         <td><b>UGX 800</b></td>
-        <td><button id="buy">BUY</button></td>
+        <td><button onclick="buy('5hrs')" class="buy">BUY</button></td>
         </td>
       </table>
       <br>
@@ -45,7 +45,7 @@
         <tr>
           <td>24HOURS</td>
         <td><b>UGX 1,000</b></td>
-        <td><button id="buy">BUY</button></td>
+        <td><button onclick="buy('24hrs')" class="buy">BUY</button></td>
         </td>
       </table>
       <br>
@@ -53,7 +53,7 @@
         <tr>
           <td>28HOURS</td>
         <td><b>UGX 1,500</b></td>
-        <td><button id="buy">BUY</button></td>
+        <td><button onclick="buy('28hrs')" class="buy">BUY</button></td>
         </td>
       </table>
       <br>
@@ -61,7 +61,7 @@
         <tr>
           <td>72HOURS</td>
         <td><b>UGX 3,000</b></td>
-        <td><button id="buy">BUY</button></td>
+        <td><button onclick="buy('72hrs')" class="buy">BUY</button></td>
         </td>
       </table>
       <br>
@@ -69,7 +69,7 @@
         <tr>
           <td>WEEKLY</td>
         <td><b>UGX 6,000</b></td>
-        <td><button id="buy">BUY</button></td>
+        <td><button onclick="buy('1wk')" class="buy">BUY</button></td>
         </td>
       </table>
       <br>
@@ -77,7 +77,7 @@
         <tr>
           <td>MONTHLY</td>
         <td><b>UGX 25,000</b></td>
-        <td><button id="buy">BUY</button></td>
+        <td><button onclick="buy('1m')" class="buy">BUY</button></td>
         </td>
       </table>
       <br>

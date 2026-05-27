@@ -51,13 +51,13 @@ table{
   font-weight: 600;
 }
 .prices p{
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .prices b{
   color: green;
 }
-#buy{
+.buy{
   font-weight: 700;
   border-radius: 4px;
   border: none;
@@ -67,7 +67,7 @@ table{
   cursor: pointer;
   transition: 0.9s;
 }
-#buy:hover{
+.buy:hover{
   background: green;
 }
 .networks{

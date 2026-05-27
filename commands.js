@@ -39,9 +39,9 @@ function buy(packageId){
 }
 
 function checkvoucher(){
-const inputcode = document.getElementById('voucherinput').value.trim().toUpperCase();
-const purchases = JSON.parse(localStorage.getItem('wifipurchase')) || [];
-const found = purchases.find(p => p.voucher === inputcode);
+const inputcode=document.getElementById('voucherinput').value.trim().toUpperCase();
+const purchases=JSON.parse(localStorage.getItem('wifipurchase'))||[];
+const found = purchases.find(p=>p.voucher===inputcode);
 
 
 if(!found){
@@ -57,7 +57,7 @@ if(now>expiry){
   return;
 }
 
-if(!found.used){
+if(found.used){
   alert("voucher already used");
   return;
 }

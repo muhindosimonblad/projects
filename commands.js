@@ -8,6 +8,7 @@ const packages={
   "1m":{hours:720,price:25000,label: "monthly"}
 };
 
+
 function buy(packageId){
   const pkg = packages[packageId];
   if(!pkg) return;
@@ -25,15 +26,15 @@ function buy(packageId){
     price: pkg.price,
     label: pkg.label,
     voucher: voucher,
-    purchasedAt: new Date().toLocalString(),
-    expiresAt: expiry.toLocalString(),
+    purchasedAt: new Date().toLocaleString(),
+    expiresAt: expiry.toLocaleString(),
     used: false
   };
   purchases.push(purchase);
   localStorage.setItem('wifipurchase',JSON.stringify(purchases));
 
   //showing voucher
-  alert(`package: ${pkg.label}\n price: ${pkg.price} UGX\n voucher: ${voucher}\n valid until: ${expiry.toLocalString()}\n\n Save this voucher to login.`);
+  alert(`package: ${pkg.label}\n price: ${pkg.price} UGX\n voucher: ${voucher}\n valid until: ${expiry.toLocaleString()}\n\n Save this voucher to login.`);
 
 }
 

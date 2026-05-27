@@ -57,7 +57,7 @@ if(now>expiry){
   return;
 }
 
-if(found.used){
+if(!found.used){
   alert("voucher already used");
   return;
 }

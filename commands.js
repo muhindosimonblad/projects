@@ -49,16 +49,17 @@ if(!found){
   return;
 }
 
+
+if(found.used===true){
+  alert("voucher already used");
+  return;
+}
+
 const now = new Date();
 const expiry = new Date(found.expiresAt);
 
 if(now>expiry){
   alert(`voucher expired on ${found.expiresAt}`);
-  return;
-}
-
-if(found.used){
-  alert("voucher already used");
   return;
 }
 

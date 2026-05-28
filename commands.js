@@ -41,7 +41,7 @@ function buy(packageId){
 function checkvoucher(){
 const inputcode=document.getElementById('voucherinput').value.trim().toUpperCase();
 const purchases=JSON.parse(localStorage.getItem('wifipurchase'))||[];
-const found = purchases.find(p=>p.voucher===inputcode);
+const found = purchases.find(p=>p.voucher.toUpperCase()===inputcode);
 
 
 if(!found){
